@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rinterio</title>
+    <!-- fontawesome cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -11,16 +12,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- daisyUI & Tailwind css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
+
   <body style="font-family: manrope">
-    <header class="sm: max-w-xs md:max-w-6xl mx-auto">
+    <header class="px-2 md:max-w-6xl mx-auto">
+      <!-- nav section starts here -->
       <nav class="flex align-middle justify-between py-4">
         <div class="flex items-center space-x-2">
           <div class="bg-lime-400 p-1 rounded-full">
@@ -42,14 +55,16 @@
           </div>
           <span class="text-3xl font-extrabold">Rinterio</span>
         </div>
-        <div class="hidden md:flex items-center space-x-4 text-base font-semibold text-gray-400">
+        <div
+          class="hidden md:flex items-center space-x-4 text-base font-semibold text-gray-400"
+        >
           <a href="" class="text-black">Home</a>
           <a href="">Services</a>
           <a href="">Portfolio</a>
           <a href="">Blogs</a>
           <a href="">contact Us</a>
         </div>
-        <div class=" hidden md:flex items-center gap-2">
+        <div class="hidden md:flex items-center gap-2">
           <button class="bg-gray-50 rounded-full p-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -82,28 +97,75 @@
               />
             </svg>
           </button>
-          
-          <a href="" class="flex items-center gap-2 bg-lime-400 py-2 px-4 rounded-full ">
+
+          <a
+            href=""
+            class="flex items-center gap-2 bg-lime-400 py-2 px-4 rounded-full"
+          >
             <span class="font-extrabold">Book Consult</span>
             <svg
-            class="w-6 bg-black text-white font-extrabold rounded-full p-2"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="{1.5}"
-            stroke="currentColor"
-            className="size-2"
-         
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-            />
-          </svg>
-        </a>
+              class="w-6 bg-black text-white font-extrabold rounded-full p-2"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="size-2"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </a>
         </div>
       </nav>
+      <!-- nav section ends here -->
+
+      <!-- banner section starts here -->
+      <section class="flex flex-col justify-center items-center">
+        <div class=" max-w-full md:max-w-96">
+          <img src="assets/banner.png" alt="banner picture" />
+        </div>
+        <div class="text-center">
+          <h1 class="text-6xl font-extrabold leading-normal">A barn house of this design has a  striking appearance</h1>
+          <p class="text-sm mt-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
+            libero. Nihil qui, molestias officia sint quidem maxime sapiente?
+            Quae aperiam optio fugit reprehenderit praesentium voluptas repellat
+            doloribus distinctio quo ea.
+          </p>
+        </div>
+        <div class="mt-4">
+          <button
+            class="flex items-center space-x-2 bg-lime-300 opacity-[1] px-6 py-2 rounded-full border-2 border-lime-400"
+          >
+            <span class="text-base font-bold text-black">View Details</span>
+            
+            <div class="bg-lime-500 rounded-full  p-2 font-semibold text-gray-950">
+
+                <svg
+                  class="w-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="size-2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+            </div>
+            
+          </button>
+        </div>
+      </section>
+      <!-- banner section ends  here -->
     </header>
     <main></main>
     <footer></footer>
